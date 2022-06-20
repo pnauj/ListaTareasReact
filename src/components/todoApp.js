@@ -36,6 +36,14 @@ export default function TodoApp() {
           className="buttonCreate"
         />
       </form>
+
+      <div className="todoContainer">
+        {
+          todos.map(item =>(
+            <div>{item.tittle}</div>
+          ))
+        }
+      </div>
     </div>
   );
 }
